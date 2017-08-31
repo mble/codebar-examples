@@ -4,13 +4,12 @@
   "description": "Example cyclic api",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "npm install && (cd ./server && npm install) && (cd ./client && npm install)",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\""
   },
   "author": "Matt Blewitt",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.4",
-    "ws": "^3.1.0"
+    "concurrently": "^3.5.0"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "name": "espresso-server",
+  "version": "1.0.0",
+  "description": "Example cyclic api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Matt Blewitt",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^3.5.0",
+    "express": "^4.15.4",
+    "ws": "^3.1.0"
+  }
+}
